@@ -39,3 +39,6 @@ morsetranslator.translate("sos");
 ```
 Will produce following result in terminal:
 > .0.0.000-0-0-000.0.0.
+
+Exchenge print "0" in doForSingleBreak for 'nothing' and the result will be:
+> ...---...
