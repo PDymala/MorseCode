@@ -8,6 +8,12 @@ E.g.
 ```
 public class CustomMorseEventHandler implements MorseTranslator{
    
+   
+    @Override
+    public void startOfTranslation() {
+
+    }
+   
     @Override
     public void doForSingleDot() {
     
@@ -26,6 +32,12 @@ public class CustomMorseEventHandler implements MorseTranslator{
     
       System.out.println("0");
     }
+    
+    @Override
+    public void endOfTranslation() {
+
+    }
+    
  }
  
 ```
