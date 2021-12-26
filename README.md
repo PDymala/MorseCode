@@ -24,7 +24,7 @@ public class CustomMorseEventHandler implements MorseTranslator{
     @Override
     public void doForSingleBreak() {
     
-      System.out.println(" ");
+      System.out.println("0");
     }
  }
  
@@ -37,4 +37,5 @@ CustomMorseEventHandler morsetranslator = new CustomMorseEventHandler();
 
 morsetranslator.translate("sos");
 ```
-
+Will produce following result in terminal:
+> .0.0.000-0-0-000.0.0.
