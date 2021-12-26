@@ -1,17 +1,17 @@
-package main.java;
+package com.diplabs.morsecode;
 
 public class Sentence {
 
 
     private String englishSentence;
-    private main.java.Word[] morseWords;
+    private Word[] morseWords;
 
     public Sentence(String englishSentence){
         this.englishSentence = englishSentence;
-        morseWords = new main.java.Word[englishSentence.split("\\W+").length];
+        morseWords = new Word[englishSentence.split("\\W+").length];
 
         for (int i = 0; i < englishSentence.split("\\W+").length; i++) {
-            morseWords[i] = new main.java.Word(englishSentence.split("\\W+")[i]);
+            morseWords[i] = new Word(englishSentence.split("\\W+")[i]);
         }
 
     }

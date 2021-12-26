@@ -1,4 +1,4 @@
-package main.java;
+package com.diplabs.morsecode;
 
 public class Word {
 
