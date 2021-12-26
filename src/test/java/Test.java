@@ -19,10 +19,6 @@ public class Test {
         Assert.assertEquals(sentence.getSentenceWithoutGaps(), "...---......---...");
         Assert.assertEquals(sentence.getSentenceWithGaps(), ".0.0.000-0-0-000.0.0.0000000.0.0.000-0-0-000.0.0.");
 
-
-
-
-
-
     }
+
 }
