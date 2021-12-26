@@ -2,16 +2,19 @@ package main.java;
 
 public interface MorseTranslator {
 
+    void startOfTranslation();
+
     void doForSingleDot();
 
     void doForSingleDash();
 
     void doForSingleBreak();
 
+    void endOfTranslation();
+
     default void translate(String textToTranslate) {
         Sentence sentence = new Sentence(textToTranslate);
-        sentence.getSentenceWithGaps();
-
+        startOfTranslation();
         for (char c : sentence.getSentenceWithGaps().toCharArray()) {
             switch (c) {
                 case '.': {
@@ -29,5 +32,6 @@ public interface MorseTranslator {
             }
 
         }
+        endOfTranslation();
     }
 }

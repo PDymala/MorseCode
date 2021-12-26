@@ -1,3 +1,4 @@
+import main.java.CustomEvent;
 import org.junit.Assert;
 
 public class Test {
@@ -18,6 +19,8 @@ public class Test {
         main.java.Sentence sentence = new main.java.Sentence("sos sos");
         Assert.assertEquals(sentence.getSentenceWithoutGaps(), "...---......---...");
         Assert.assertEquals(sentence.getSentenceWithGaps(), ".0.0.000-0-0-000.0.0.0000000.0.0.000-0-0-000.0.0.");
+
+
 
     }
 
