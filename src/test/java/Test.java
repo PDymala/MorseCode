@@ -1,3 +1,4 @@
+import com.diplabs.morsecode.CustomEvent;
 import com.diplabs.morsecode.Letter;
 import com.diplabs.morsecode.Sentence;
 import com.diplabs.morsecode.Word;
@@ -22,7 +23,17 @@ public class Test {
         Assert.assertEquals(sentence.getSentenceWithoutGaps(), "...---......---...");
         Assert.assertEquals(sentence.getSentenceWithGaps(), ".0.0.000-0-0-000.0.0.0000000.0.0.000-0-0-000.0.0.");
 
+        CustomEvent customEvent = new CustomEvent();
 
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < 1000; i++) {
+                    customEvent.translate("s");
+                }
+            }
+        });
+        thread.start();
 
     }
 
