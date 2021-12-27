@@ -1,7 +1,28 @@
 # MorseCode
-Very simple Morse API text translator. Mainly to test github dependency for Android
+Very simple Morse API text translator. Mainly to do some testing with jitpack, API development etc.
 
 
+## Add to your project
+Add dependency e.g. with gradle:
+
+```
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+}
+```
+and add dependency:
+
+```
+dependencies {
+   implementation 'com.github.pdymala:morsecode:master-SNAPSHOT'
+}
+```
+
+## Usage
 Create your own class to handle Morse events
 E.g.
 
@@ -54,3 +75,6 @@ Will produce following result in terminal:
 
 Exchenge print "0" in doForSingleBreak for 'nothing' and the result will be:
 > ...---...
+
+## License
+Free to use by anyone for anything
