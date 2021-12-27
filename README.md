@@ -1,9 +1,9 @@
 # MorseCode
-Very simple Morse API text translator. Mainly to do some testing with jitpack, API development etc.
+Very simple Morse code API text translator. Mainly to do some testing with jitpack, API development etc.
 
 
 ## Add to your project
-Add dependency e.g. with gradle:
+Add in your project with jitpack (Gradle). In your gradle file:
 
 ```
 
@@ -14,7 +14,7 @@ allprojects {
 
 }
 ```
-and add dependency:
+and dependency:
 
 ```
 dependencies {
@@ -75,6 +75,11 @@ Will produce following result in terminal:
 
 Exchenge print "0" in doForSingleBreak for 'nothing' and the result will be:
 > ...---...
+
+## Samples
+
+- Samples of custom event classes can be found in project directory [here](https://github.com/PDymala/MorseCode/tree/master/src/main/java/examples)
+- A sample Android project with use of this API can be found [here](https://github.com/PDymala/MorseApp)
 
 ## License
 Free to use by anyone for anything
